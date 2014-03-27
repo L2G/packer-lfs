@@ -1,0 +1,20 @@
+{
+  "builders": [
+    {
+      "type": "virtualbox-iso",
+      "guest_os_type": "Linux_64",
+      "disk_size": "16384",
+      "guest_additions_mode": "disable",
+      "iso_urls": [
+        "./debian-live-7.4-amd64-rescue.iso",
+        "http://ftp.osuosl.org/pub/debian-cdimage/7.4.0-live/amd64/iso-hybrid/debian-live-7.4-amd64-rescue.iso"
+        ],
+      "iso_checksum": "60f2cc8c575fe854e5787e4538a3ee7de6917621",
+      "iso_checksum_type": "sha1",
+      "http_directory": "./http_root",
+      "ssh_username": "packer",
+      "ssh_password": "packer",
+      "shutdown_command": "echo 'packer' | sudo -S shutdown -P now"
+    }
+  ]
+}
