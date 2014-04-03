@@ -8,10 +8,9 @@
       "ssh_username": "packer",
       "ssh_password": "packer",
       "iso_urls": [
-        "./debian-live-7.4-amd64-rescue.iso",
-        "http://ftp.osuosl.org/pub/debian-cdimage/7.4.0-live/amd64/iso-hybrid/debian-live-7.4-amd64-rescue.iso"
+        "http://debian.osuosl.org/debian-cdimage/current/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso"
         ],
-      "iso_checksum": "60f2cc8c575fe854e5787e4538a3ee7de6917621",
+      "iso_checksum": "015b0eadeac8e5fb18c74f62d1cc06fb2fbe3eb5",
       "iso_checksum_type": "sha1",
       "http_directory": "./http_root",
       "boot_wait": "5s",
