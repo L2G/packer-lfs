@@ -1,6 +1,7 @@
 {
   "builders": [
     {
+      "name": "lfs-stage0",
       "type": "virtualbox-iso",
       "guest_os_type": "Linux_64",
       "disk_size": "16384",
