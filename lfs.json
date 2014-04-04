@@ -5,7 +5,7 @@
       "guest_os_type": "Linux_64",
       "disk_size": "16384",
       "guest_additions_mode": "disable",
-      "ssh_username": "packer",
+      "ssh_username": "root",
       "ssh_password": "packer",
       "iso_urls": [
         "http://debian.osuosl.org/debian-cdimage/current/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso"
@@ -25,7 +25,7 @@
         "<enter>",
         "<wait10><enter>"
       ],
-      "shutdown_command": "echo 'packer' | sudo -S shutdown -h -P now"
+      "shutdown_command": "shutdown -h -P now"
     }
   ]
 }
