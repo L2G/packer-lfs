@@ -28,5 +28,11 @@
       ],
       "shutdown_command": "shutdown -h -P now"
     }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "provisioners/zero.sh"
+    }
   ]
 }
