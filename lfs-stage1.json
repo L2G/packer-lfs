@@ -1,0 +1,18 @@
+{
+  "builders": [
+    {
+      "name": "lfs-stage1",
+      "type": "virtualbox-ovf",
+      "source_path": "output-lfs-stage0/packer-lfs-stage0.ovf",
+      "ssh_username": "root",
+      "ssh_password": "packer",
+      "shutdown_command": "shutdown -h -P now"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "provisioners/stage1.make"
+    }
+  ]
+}
