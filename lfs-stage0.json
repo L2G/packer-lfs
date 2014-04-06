@@ -39,7 +39,10 @@
     },
     {
       "type": "shell",
-      "script": "provisioners/zero.sh"
+      "scripts": [
+        "provisioners/stage0/version-check.sh",
+        "provisioners/zero.sh"
+      ]
     }
   ]
 }
