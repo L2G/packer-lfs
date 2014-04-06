@@ -28,7 +28,7 @@
     },
     {
       "type": "shell",
-      "inline": ["hostname packer-lfs-stage1"]
+      "inline": ["echo 'packer-lfs-stage1' > /etc/hostname"]
     }
   ]
 }
