@@ -12,7 +12,12 @@
   "provisioners": [
     {
       "type": "shell",
-      "script": "provisioners/stage1.make"
+      "environment_vars": [
+        "LFS=/mnt/lfs"
+      ],
+      "scripts": [
+        "provisioners/stage1/3_1_introduction.sh"
+      ]
     }
   ]
 }
