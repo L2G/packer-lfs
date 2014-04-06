@@ -16,15 +16,15 @@
         "LFS=/mnt/lfs"
       ],
       "scripts": [
-        "provisioners/stage1/3_1_introduction.sh",
-        "provisioners/stage1/4_2_creating_the_lfs_tools_directory.sh",
-        "provisioners/stage1/4_3_adding_the_lfs_user.sh"
+        "provisioners/stage1/3_1_introduction.bash",
+        "provisioners/stage1/4_2_creating_the_lfs_tools_directory.bash",
+        "provisioners/stage1/4_3_adding_the_lfs_user.bash"
       ]
     },
     {
       "type": "shell",
       "execute_command": "chmod +x {{ .Path }}; su - lfs -c {{ .Path }}",
-      "script": "provisioners/stage1/4_4_setting_up_the_environment.sh"
+      "script": "provisioners/stage1/4_4_setting_up_the_environment.bash"
     },
     {
       "type": "shell",

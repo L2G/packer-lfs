@@ -40,7 +40,7 @@
     {
       "type": "shell",
       "scripts": [
-        "provisioners/stage0/version-check.sh",
+        "provisioners/stage0/version-check.bash",
         "provisioners/zero.sh"
       ]
     }
