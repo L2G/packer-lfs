@@ -32,6 +32,13 @@
   "provisioners": [
     {
       "type": "shell",
+      "inline": [
+        "apt-get autoremove -y xserver-common",
+        "apt-get install -y patch"
+      ]
+    },
+    {
+      "type": "shell",
       "script": "provisioners/zero.sh"
     }
   ]
