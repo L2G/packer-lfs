@@ -25,6 +25,10 @@
       "type": "shell",
       "execute_command": "chmod +x {{ .Path }}; su - lfs -c {{ .Path }}",
       "script": "provisioners/stage1/4_4_setting_up_the_environment.sh"
+    },
+    {
+      "type": "shell",
+      "inline": ["hostname packer-lfs-stage1"]
     }
   ]
 }
