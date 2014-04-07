@@ -2,7 +2,7 @@ packer-lfs
 ==========
 
 This is a work-in-progress/proof-of-concept with the goal of using
-[Packer](http://www.packer.io) to automate the build of a low-overhead Linux
+[Packer](http://www.packer.io) to automate the build of a low-overhead GNU/Linux
 system based on [Linux From Scratch](http://www.linuxfromscratch.org) version
 7.5.
 

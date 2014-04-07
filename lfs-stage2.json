@@ -14,7 +14,10 @@
     {
       "type": "shell",
       "scripts": [
-        "provisioners/stage2/5.4_binutils_2.24_pass_1.bash"
+        "provisioners/stage2/5.4_binutils_2.24_pass_1.bash",
+        "provisioners/stage2/5.5_gcc_4.8.2_pass_1.bash",
+        "provisioners/stage2/5.6_linux_3.13.9_api_headers.bash",
+        "provisioners/stage2/5.7_glibc_2.19.bash"
       ]
     },
     {
