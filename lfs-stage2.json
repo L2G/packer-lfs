@@ -1,0 +1,26 @@
+{
+  "builders": [
+    {
+      "name": "lfs-stage2",
+      "type": "virtualbox-ovf",
+      "source_path": "output-lfs-stage1/packer-lfs-stage1.ovf",
+      "ssh_username": "lfs",
+      "ssh_password": "lfs",
+      "headless": "true",
+      "shutdown_command": "echo 'lfs' | sudo -S shutdown -h -P now"
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "scripts": [
+        "provisioners/stage2/5.4_binutils_2.24_pass_1.bash"
+      ]
+    },
+    {
+      "type": "shell",
+      "execute_command": "echo 'lfs' | sudo -S bash {{.Path}}",
+      "inline": ["echo 'packer-lfs-stage2' > /etc/hostname"]
+    }
+  ]
+}
