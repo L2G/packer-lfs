@@ -24,6 +24,10 @@
       "type": "shell",
       "execute_command": "echo 'lfs' | sudo -S bash {{.Path}}",
       "inline": ["echo 'packer-lfs-stage2' > /etc/hostname"]
+    },
+    {
+      "type": "shell",
+      "script": "provisioners/zero.sh"
     }
   ]
 }
