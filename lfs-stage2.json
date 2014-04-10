@@ -22,7 +22,10 @@
         "provisioners/stage2/5_09_binutils_2.24_pass_2.bash",
         "provisioners/stage2/5_10_gcc_4.8.2_pass_2.bash",
         "provisioners/stage2/5_11_tcl_8.6.1.bash",
-        "provisioners/stage2/5_12_expect_5.45.bash"
+        "provisioners/stage2/5_12_expect_5.45.bash",
+        "provisioners/stage2/5_13_dejagnu_1.5.1.bash",
+        "provisioners/stage2/5_14_check_0.9.12.bash",
+        "provisioners/stage2/5_15_ncurses_5.9.bash"
       ]
     },
     {
